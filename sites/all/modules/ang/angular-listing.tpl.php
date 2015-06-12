@@ -7,7 +7,7 @@
 
       <ul>
         <li ng-repeat="node in nodes">
-            <img ng-src="/sites/default/files/{{ node.product.field-image }}" alt="product image" />
+            <!-- <img ng-src="http://localhost:8888/sites/default/files/styles/product_medium/public/{{node.product.field_image}}" alt="product image" /> -->
             <button ng-click="open(node.nid)">Open</button>
              {{ node.title }}
         </li>
