@@ -87,6 +87,7 @@ function react_menu() {
     'page arguments' => array('react_admin_settings'),
     'file' => 'react.admin.inc',
   );
+  // dpm($vars['view']->name, 'view name');
 
   return $items;
 }

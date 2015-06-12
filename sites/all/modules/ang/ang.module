@@ -1,7 +1,5 @@
 <?php
-    /**
-     * Implements hook_menu().
-     */
+    /** Implements hook_menu(). */
     function ang_menu() {
       $items = array();
 
@@ -22,7 +20,6 @@
      */
 
     function ang_node_api($param) {
-
       // If passed param is node id
       if ($param && is_numeric($param)) {
         $node = node_load($param);

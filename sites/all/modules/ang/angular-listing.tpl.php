@@ -6,7 +6,11 @@
      <input ng-model="search" ng-change="doSearch()">
 
       <ul>
-        <li ng-repeat="node in nodes"><button ng-click="open(node.nid)">Open</button> {{ node.title }}</li>
+        <li ng-repeat="node in nodes">
+            <img ng-src="/sites/default/files/{{ node.product.field-image }}" alt="product image" />
+            <button ng-click="open(node.nid)">Open</button>
+             {{ node.title }}
+        </li>
       </ul>
 
      <script type="text/ng-template" id="loadedNodeTemplate">
